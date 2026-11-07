@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "chi-tieu-nha",
+    "name": "Keepsake",
     "slug": "chi-tieu-nha",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,7 +8,8 @@
     "scheme": "chitieunha",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/icon.png",
+      "bundleIdentifier": "com.phanvantan.chi-tieu-nha"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,10 +18,14 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
-      "output": "server",
+      "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -32,11 +37,34 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Chi Tiêu Nhà cần quyền camera để bạn chụp ảnh đăng bài."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Chi Tiêu Nhà cần quyền thư viện ảnh để bạn chọn ảnh đại diện."
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f7c9cefb-b4e3-4f81-98e7-51e8e249b032"
+      }
+    },
+    "owner": "phanvantan"
   }
 }
