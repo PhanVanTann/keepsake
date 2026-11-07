@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#D93A2B"/>
+  <g transform="rotate(-4 512.0 475.0)">
+    <path d="M 262,230 L 762,230 L 762,700 L 324.5,720.0 L 387.0,700.0 L 449.5,720.0 L 512.0,700.0 L 574.5,720.0 L 637.0,700.0 L 699.5,720.0 L 762.0,700.0 L 262,700 Z" fill="#FFFFFF"/>
+    <line x1="298" y1="320" x2="726" y2="320" stroke="#CDD2D8" stroke-width="6" stroke-dasharray="2 14" stroke-linecap="round"/>
+    <line x1="298" y1="390" x2="662" y2="390" stroke="#CDD2D8" stroke-width="6" stroke-dasharray="2 14" stroke-linecap="round"/>
+    <text x="512.0" y="645" font-family="Menlo, Courier New, monospace" font-weight="800" font-size="230" fill="#16181C" text-anchor="middle">K</text>
+  </g>
+</svg>
